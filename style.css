@@ -1,0 +1,133 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Garamond';
+    letter-spacing: 0cm;
+    font-weight: 300;
+    color: #d4af37;
+}
+
+/* Box */
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.inner-box {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.inner-box h2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.inner-box img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+/* Input Row */
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+/* List Items */
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: 'check_box_outline_blank'; /* Default icon */
+    font-family: 'Material Symbols Outlined';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    font-size: 24px;
+    color: #555;
+    top: 12px;
+    left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::after {
+    content: 'check_box'; /* Checked icon */
+    /*font-family: 'Material Symbols Outlined';*/
+    color: #4caf50;
+}
+
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
